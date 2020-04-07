@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack index.js --mode=development --watch"
+    "dev": "webpack --mode=development --watch",
+    "start": "webpack-dev-server --open"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "vue-loader": "^15.9.0",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }

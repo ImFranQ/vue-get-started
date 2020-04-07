@@ -32,5 +32,10 @@ module.exports = {
   },
   plugins:[
     new VueLoaderPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: process.env.PORT || 8000
+  }
 }
